@@ -25,11 +25,11 @@ export const navLinks = [
       {
         key: "menus_list",
         icon: <SquareMenu size={18} />,
-        label: "Menus list",
+        label: <Link href="/menus-list"> Menus list </Link>,
       },
       {
         key: "add_menus",
-        icon: <BadgePlus  size={18} />,
+        icon: <BadgePlus size={18} />,
         label: "Add Menus",
       },
     ],

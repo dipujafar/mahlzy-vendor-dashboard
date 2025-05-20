@@ -34,7 +34,6 @@
 .ant-menu-title-content {
   font-size: 14px;
   color: var(--color-primary-gray) !important;
-  padding-left: 10px;
 }
 
 .ant-menu-item > svg {
@@ -49,6 +48,7 @@
 .sidebar-menu {
   background-color: var(--color-secondary) !important;
   color: var(--color-primary-white) !important;
+  border: none !important
 }
 
 @layer utilities {
@@ -82,13 +82,16 @@
   overflow: auto !important;
 }
 
+
+
 .ant-menu-item-selected {
   color: var(--color-menu-item) !important;
 }
 .ant-menu-item-selected > span > a {
   color: var(--color-menu-item) !important;
-  font-size: 16px;
-  font-weight: 600;
+}
+ .ant-menu-sub > .ant-menu-item-selected  > span {
+  color: var(--color-menu-item) !important;
 }
 
 .ant-menu-item-selected > svg {

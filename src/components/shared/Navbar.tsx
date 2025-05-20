@@ -56,10 +56,11 @@ const Navbar = ({ collapsed, setCollapsed }: TNavbarProps) => {
           </div>
         </Link> */}
 
-        <Link href={"/personal-information"} className="flex items-center">
+        <Link href={"#"} className="flex items-center">
           <Avatar
             src={avatarImg.src}
-            size={42}
+            size={42
+            }
             className="border border-main-color size-12"
           ></Avatar>
         </Link>
