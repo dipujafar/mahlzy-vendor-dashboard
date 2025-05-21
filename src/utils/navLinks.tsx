@@ -5,32 +5,33 @@ import { RiLogoutCircleLine } from "react-icons/ri";
 import Link from "next/link";
 import { PiListPlusFill } from "react-icons/pi";
 import { BadgePlus, Menu, SquareMenu } from "lucide-react";
+import { AddItemIcon, MenuIcon, MenuListIcon } from "@/icons";
 
 export const navLinks = [
   {
     key: "dashboard",
-    icon: <RiDashboardHorizontalFill size={18} />,
+    icon: <RiDashboardHorizontalFill size={22} />,
     label: <Link href={"/dashboard"}>Dashboard</Link>,
   },
   {
     key: "customers",
-    icon: <GoPeople size={18} />,
+    icon: <GoPeople size={22} />,
     label: <Link href={"/customers"}>Customers</Link>,
   },
   {
     key: "menus",
-    icon: <Menu size={18} />,
+    icon: <MenuIcon  />,
     label: "menus",
     children: [
       {
         key: "menus_list",
-        icon: <SquareMenu size={18} />,
+        icon: <MenuListIcon className="nav-icon"/>,
         label: <Link href="/menus-list"> Menus list </Link>,
       },
       {
         key: "add_menus",
-        icon: <BadgePlus size={18} />,
-        label: "Add Menus",
+        icon: <AddItemIcon  />,
+        label: "Add Products",
       },
     ],
   },

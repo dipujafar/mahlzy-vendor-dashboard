@@ -97,6 +97,9 @@
 .ant-menu-item-selected > svg {
   color: var(--color-menu-item) !important;
 }
+.ant-menu-item-selected > svg > path {
+  fill: var(--color-menu-item) !important;
+}
 
 /* ant design upload related style */
 .ant-upload-list-item {
