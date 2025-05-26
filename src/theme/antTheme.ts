@@ -11,6 +11,7 @@ const antTheme = {
       itemSelectedColor: "var(--color-menu-item)",
       itemSelectedBg: "var(--color-main)",
       fontSize: 12,
+      itemColor: "#303030",
     },
     Table: {
       headerBg: "#FFC3B0",

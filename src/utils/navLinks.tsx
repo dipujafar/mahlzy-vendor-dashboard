@@ -14,24 +14,36 @@ export const navLinks = [
     label: <Link href={"/dashboard"}>Dashboard</Link>,
   },
   {
-    key: "customers",
-    icon: <GoPeople size={22} />,
-    label: <Link href={"/customers"}>Customers</Link>,
-  },
-  {
     key: "menus",
-    icon: <MenuIcon  />,
-    label: "menus",
+    icon: <MenuIcon />,
+    label: "Menus",
     children: [
       {
         key: "menus_list",
-        icon: <MenuListIcon className="nav-icon"/>,
+        icon: <MenuListIcon className="nav-icon" />,
         label: <Link href="/menus-list"> Menus list </Link>,
       },
       {
         key: "add_menus",
-        icon: <AddItemIcon  />,
-        label: "Add Products",
+        icon: <AddItemIcon />,
+        label: <Link href="/add-product">Add Products</Link>,
+      },
+    ],
+  },
+  {
+    key: "customer",
+    icon: <MenuIcon />,
+    label: "Customer",
+    children: [
+      {
+        key: "customers-list",
+        icon: <GoPeople size={22} />,
+        label: <Link href={"/customers"}>Customers List</Link>,
+      },
+      {
+        key: "customer_review",
+        icon: <AddItemIcon />,
+        label: <Link href="/customer_review">Customer Review</Link>,
       },
     ],
   },

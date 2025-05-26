@@ -33,12 +33,11 @@
 
 .ant-menu-title-content {
   font-size: 14px;
-  color: var(--color-primary-gray) !important;
 }
 
-.ant-menu-item > svg {
+/* .ant-menu-item > svg {
   color: var(--color-primary-gray) !important;
-}
+} */
 
 .ant-layout-sider{
   background-color:  var(--color-secondary) !important;
@@ -47,7 +46,6 @@
 
 .sidebar-menu {
   background-color: var(--color-secondary) !important;
-  color: var(--color-primary-white) !important;
   border: none !important
 }
 

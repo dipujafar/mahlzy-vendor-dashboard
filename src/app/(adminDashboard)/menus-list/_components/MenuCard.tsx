@@ -33,7 +33,7 @@ const MenuCard: React.FC<PizzaCardProps> = ({
       <div className="flex">
         <Button
           variant="outline"
-          className="flex-1 rounded-none border-t border-r border-ma py-3 text-gray-600 hover:bg-gray-100"
+          className="flex-1 rounded-none border-t border-r border-gray-200 py-3 text-gray-600 hover:bg-gray-100"
           onClick={() => onRemove(id)}
         >
           Remove
