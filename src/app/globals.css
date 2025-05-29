@@ -88,9 +88,7 @@
 .ant-menu-item-selected > span > a {
   color: var(--color-menu-item) !important;
 }
- .ant-menu-sub > .ant-menu-item-selected  > span {
-  color: var(--color-menu-item) !important;
-}
+
 
 .ant-menu-item-selected > svg {
   color: var(--color-menu-item) !important;
@@ -98,6 +96,19 @@
 .ant-menu-item-selected > svg > path {
   fill: var(--color-menu-item) !important;
 }
+
+
+
+/* ------------------sub menu related styles ---------------- */
+ .ant-menu-sub > .ant-menu-item-selected  > span {
+  color: var(--color-menu-item) !important;
+}
+
+.ant-menu-sub > .ant-menu-item {
+  padding-left: 33px !important;
+}
+
+/* -------------------------------------------------------------------- */
 
 /* ant design upload related style */
 .ant-upload-list-item {
@@ -116,7 +127,7 @@
 
 /* ============== change default eye icon color in  password input field =================================== */
 .ant-input-password-icon svg {
-  fill: #ffffff !important;
+  fill: #505050 !important;
 }
 
 .month-select .anticon-down svg {

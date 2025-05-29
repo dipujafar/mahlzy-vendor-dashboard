@@ -58,11 +58,11 @@ export const navLinks = [
   //     label: <Link href={"/user"}>Team Member</Link>,
   //   },
 
-  //   {
-  //     key: "settings",
-  //     icon: <IoSettingsOutline size={18} />,
-  //     label: <Link href={"/settings"}>Settings</Link>,
-  //   },
+    {
+      key: "settings",
+      icon: <IoSettingsOutline size={18} />,
+      label: <Link href={"/settings"}>Settings</Link>,
+    },
   // {
   //   key: "logout",
   //   icon: <RiLogoutCircleLine size={18} />,

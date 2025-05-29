@@ -36,7 +36,7 @@ const antTheme = {
       colorWarning: "rgb(205,3,53)",
     },
     Form: {
-      labelFontSize: 18,
+      // labelFontSize: 18,
     },
   },
 };

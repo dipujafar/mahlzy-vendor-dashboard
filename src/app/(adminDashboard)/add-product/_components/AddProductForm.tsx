@@ -128,7 +128,7 @@ export default function AddProductForm() {
                     <FormLabel className="text-sm font-medium text-gray-700">Description</FormLabel>
                     <FormControl>
                       <Textarea
-                        placeholder="Pizza, a beloved food worldwide, is prominent in Naples, Italy. It's typically a flattened base with Pizza, a beloved food worldwide, prominent in Naples, Italy. It's typically a flattened base with Pizza, a beloved food worldwide, prominent in Naples, Italy. It's typically a flattened base with Pizza, a beloved food worldwide, prominent in Naples, Italy. It's typically a flattened base with..."
+                        placeholder="Write product description...."
                         className="min-h-[120px] border-gray-200 focus:border-orange-500 focus:ring-orange-500 resize-none"
                         {...field}
                       />
@@ -147,7 +147,7 @@ export default function AddProductForm() {
                       <FormLabel className="text-sm font-medium text-gray-700">Price</FormLabel>
                       <FormControl>
                         <Input
-                          placeholder="₹4,500"
+                          placeholder="Enter Price"
                           className="border-gray-200 focus:border-orange-500 focus:ring-orange-500"
                           {...field}
                         />
@@ -174,6 +174,7 @@ export default function AddProductForm() {
                           <SelectItem value="beverages">Beverages</SelectItem>
                           <SelectItem value="desserts">Desserts</SelectItem>
                           <SelectItem value="appetizers">Appetizers</SelectItem>
+                          <SelectItem value="other">Other</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />
@@ -200,6 +201,7 @@ export default function AddProductForm() {
                           <SelectItem value="medium">Medium</SelectItem>
                           <SelectItem value="large">Large</SelectItem>
                           <SelectItem value="extra-large">Extra Large</SelectItem>
+                          <SelectItem value="other">Other</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />
@@ -212,10 +214,10 @@ export default function AddProductForm() {
                   name="discount"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-sm font-medium text-gray-700">Discount</FormLabel>
+                      <FormLabel className="text-sm font-medium text-gray-700">Discount (%)</FormLabel>
                       <FormControl>
                         <Input
-                          placeholder="10% Off"
+                          placeholder="Enter discount"
                           className="border-gray-200 focus:border-orange-500 focus:ring-orange-500"
                           {...field}
                         />
@@ -292,14 +294,14 @@ export default function AddProductForm() {
           <div className="flex gap-4 pt-6">
             <Button
               type="submit"
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-2 rounded-lg font-medium"
+              className="bg-main-color flex-1 hover:bg-orange-600 text-white px-8 py-2 rounded-lg font-medium"
             >
               Add Menu
             </Button>
             <Button
               type="button"
               variant="outline"
-              className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-2 rounded-lg font-medium"
+              className="border-main-color text-main-color flex-1  hover:bg-gray-50 px-8 py-2 rounded-lg font-medium"
               onClick={() => form.reset()}
             >
               Cancel

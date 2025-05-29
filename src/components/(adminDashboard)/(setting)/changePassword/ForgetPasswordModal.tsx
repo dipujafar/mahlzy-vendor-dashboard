@@ -32,14 +32,10 @@ const ForgetPasswordModal = ({ open, setOpen }: TPropsType) => {
       >
         <div className="py-14">
           <div
-            className="w-12 h-12 bg-main-color  absolute top-2 right-2 rounded-full cursor-pointer"
+            className="w-10 h-10 bg-red-500  absolute top-2 right-2 rounded-full cursor-pointer flex justify-center items-center"
             onClick={() => setOpen(false)}
           >
-            <RiCloseLargeLine
-              size={18}
-              color="#fff"
-              className="absolute top-1/3 left-1/3"
-            />
+            <RiCloseLargeLine size={18} color="#fff" />
           </div>
 
           {/* header */}
@@ -57,12 +53,9 @@ const ForgetPasswordModal = ({ open, setOpen }: TPropsType) => {
             theme={{
               components: {
                 Input: {
-                  colorBgContainer: "var(--color-primary-gray)",
-                  colorText: "#fff",
-                  colorTextPlaceholder: "#fff",
-                },
-                Form: {
-                  labelColor: "#fff",
+                  colorBgContainer: "#F6F6F6",
+                  colorText: "#505050",
+                  colorTextPlaceholder: "#505050",
                 },
               },
             }}
@@ -78,19 +71,17 @@ const ForgetPasswordModal = ({ open, setOpen }: TPropsType) => {
             >
               {/*  input  email */}
               <Form.Item
-                label="Email"
                 name="email"
                 rules={[{ type: "email", required: true }]}
               >
-                <Input size="large" placeholder="Enter Your Email "></Input>
+                <Input
+                  size="large"
+                  placeholder="Enter Your Email"
+                  className="!border-[#D3D3D3] !py-3"
+                ></Input>
               </Form.Item>
 
-              <Button
-                htmlType="submit"
-                size="large"
-                block
-                className="!border-none "
-              >
+              <Button htmlType="submit" size="large" block>
                 Send OTP
               </Button>
             </Form>

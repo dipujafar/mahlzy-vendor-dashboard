@@ -59,10 +59,7 @@ const PersonalInformationContainer = () => {
         </div>
         <div className={edit ? "hidden" : ""}>
           <Button
-            style={{
-              backgroundColor: "var(--color-secondary)",
-              border: "none",
-            }}
+          className="bg-main-color"
             onClick={() => setEdit(true)}
             size="large"
             icon={<FiEdit />}
@@ -75,7 +72,7 @@ const PersonalInformationContainer = () => {
 
       {/* personal information */}
       <div className="mt-10 flex justify-center flex-col xl:flex-row items-center  gap-10">
-        <div className="bg-primary-gray h-[365px] md:w-[350px] rounded-xl border border-main-color flex justify-center items-center  text-text-color">
+        <div className="bg-[#F6F6F6] h-[330px] md:w-[350px] rounded-xl border border[#D3D3D3] flex justify-center items-center  text-text-color">
           <div className="space-y-1 relative">
             <div className="relative group">
               <Image
@@ -83,7 +80,7 @@ const PersonalInformationContainer = () => {
                 alt="adminProfile"
                 width={1200}
                 height={1200}
-                className="size-36 rounded-full flex justify-center items-center"
+                className="size-36 rounded-full flex justify-center items-center object-cover"
               ></Image>
 
               {/* cancel button */}
@@ -125,12 +122,12 @@ const PersonalInformationContainer = () => {
             theme={{
               components: {
                 Input: {
-                  colorBgContainer: "var(--color-primary-gray)",
-                  colorText: "#fff",
-                  colorTextPlaceholder: "#fff",
+                  colorBgContainer: "#F6F6F6",
+                  colorText: "#505050",
+                  colorTextPlaceholder: "#505050",
                 },
                 Form: {
-                  labelColor: "#fff",
+                  labelColor: "#505050",
                 },
               },
             }}
@@ -151,12 +148,13 @@ const PersonalInformationContainer = () => {
               {/*  input  name */}
               <Form.Item label="Name" name="name">
                 {edit ? (
-                  <Input size="large" placeholder="Enter full name "></Input>
+                  <Input size="large" placeholder="Enter full name "  className="!border-[#D3D3D3] !py-3"s></Input>
                 ) : (
                   <Input
                     size="large"
-                    placeholder="Enter full name "
+                    placeholder="Enter full name  "
                     readOnly
+                     className="!border-[#D3D3D3] !py-3"
                   ></Input>
                 )}
               </Form.Item>
@@ -164,12 +162,13 @@ const PersonalInformationContainer = () => {
               {/*  input  email */}
               <Form.Item label="Email" name="email">
                 {edit ? (
-                  <Input size="large" placeholder="Enter email "></Input>
+                  <Input size="large" placeholder="Enter email "  className="!border-[#D3D3D3] !py-3"></Input>
                 ) : (
                   <Input
                     size="large"
                     placeholder="Enter email"
                     readOnly
+                     className="!border-[#D3D3D3] !py-3"
                   ></Input>
                 )}
               </Form.Item>
@@ -177,12 +176,13 @@ const PersonalInformationContainer = () => {
               {/* input  phone number  */}
               <Form.Item label="Phone Number" name="phone">
                 {edit ? (
-                  <Input size="large" placeholder="Enter Phone number"></Input>
+                  <Input size="large" placeholder="Enter Phone number"  className="!border-[#D3D3D3] !py-3"></Input>
                 ) : (
                   <Input
                     size="large"
                     placeholder="Enter Phone number"
                     readOnly
+                     className="!border-[#D3D3D3] !py-3"
                   ></Input>
                 )}
               </Form.Item>

@@ -28,14 +28,10 @@ const UpdatePasswordModal = ({ open, setOpen }: TPropsType) => {
       >
         <div className="py-14">
           <div
-            className="w-12 h-12 bg-main-color  absolute top-2 right-2 rounded-full cursor-pointer"
+            className="w-10 h-10 bg-red-500  absolute top-2 right-2 rounded-full cursor-pointer flex justify-center items-center"
             onClick={() => setOpen(false)}
           >
-            <RiCloseLargeLine
-              size={18}
-              color="#fff"
-              className="absolute top-1/3 left-1/3"
-            />
+            <RiCloseLargeLine size={18} color="#fff" />
           </div>
 
           {/* header */}
@@ -51,9 +47,9 @@ const UpdatePasswordModal = ({ open, setOpen }: TPropsType) => {
             theme={{
               components: {
                 Input: {
-                  colorBgContainer: "var(--color-primary-gray)",
-                  colorText: "#fff",
-                  colorTextPlaceholder: "#fff",
+                  colorBgContainer: "#F6F6F6",
+                  colorText: "#505050",
+                  colorTextPlaceholder: "#505050",
                 },
                 Form: {
                   labelColor: "#fff",
@@ -72,18 +68,20 @@ const UpdatePasswordModal = ({ open, setOpen }: TPropsType) => {
             >
               {/*  input  new Password*/}
               <Form.Item
-                label="New password"
                 name="newPassword"
                 rules={[
                   { required: true, message: "Please Enter New  Password" },
                 ]}
               >
-                <Input.Password size="large" placeholder="Set new password" />
+                <Input.Password
+                  size="large"
+                  placeholder="Set new password"
+                  className="!border-[#D3D3D3] !py-3"
+                />
               </Form.Item>
 
               {/* input  confirm number  */}
               <Form.Item
-                label="Re-enter new password"
                 name="confirmPassword"
                 rules={[
                   { required: true, message: "Please Re-enter new password" },
@@ -92,15 +90,11 @@ const UpdatePasswordModal = ({ open, setOpen }: TPropsType) => {
                 <Input.Password
                   size="large"
                   placeholder="Re-enter new password"
+                  className="!border-[#D3D3D3] !py-3"
                 />
               </Form.Item>
 
-              <Button
-                htmlType="submit"
-                size="large"
-                block
-                className="!border-none"
-              >
+              <Button htmlType="submit" size="large" block>
                 Update Password
               </Button>
             </Form>

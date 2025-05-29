@@ -68,7 +68,7 @@ const VerifyEmailModal = ({ open, setOpen }: TPropsType) => {
                 justifyContent: "center",
               }}
             >
-              <Input.OTP size="large" />
+              <Input.OTP size="large" className="!border-[#D3D3D3]" />
             </Form.Item>
 
             <div className="mb-5 flex justify-between px-12 text-text-color">
@@ -82,7 +82,7 @@ const VerifyEmailModal = ({ open, setOpen }: TPropsType) => {
               htmlType="submit"
               size="large"
               block
-              className="!border-none "
+             
             >
               Send OPT
             </Button>

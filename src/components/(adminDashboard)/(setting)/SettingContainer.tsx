@@ -13,18 +13,18 @@ const links = [
     lable: "Change Password",
     path: "changePassword",
   },
-  {
-    lable: "Terms & Condition",
-    path: "terms-condition",
-  },
-  {
-    lable: "Privacy Policy",
-    path: "privacy-policy",
-  },
-  {
-    lable: "About Us",
-    path: "about-us",
-  },
+  // {
+  //   lable: "Terms & Condition",
+  //   path: "terms-condition",
+  // },
+  // {
+  //   lable: "Privacy Policy",
+  //   path: "privacy-policy",
+  // },
+  // {
+  //   lable: "About Us",
+  //   path: "about-us",
+  // },
 ];
 
 const SettingContainer = () => {
@@ -37,22 +37,22 @@ const SettingContainer = () => {
             <div
               key={inx}
               onClick={() => setOpen(!open)}
-              className="bg-primary-gray  p-5 rounded flex justify-between items-center cursor-pointer"
+              className="bg-[#F6F6F6] p-5 rounded flex justify-between items-center cursor-pointer"
             >
               <h4 className="text-text-color font-medium text-lg">
                 {link?.lable}
               </h4>
-              <IoIosArrowForward size={18} color="#fff" />
+              <IoIosArrowForward size={18} color="#505050" />
             </div>
           );
         } else {
           return (
             <Link key={link.path} href={`/${link.path}`}>
-              <div className="bg-primary-gray  p-5 rounded flex justify-between items-center">
+              <div className="bg-[#F6F6F6]  p-5 rounded flex justify-between items-center">
                 <h4 className="text-text-color font-medium text-lg">
                   {link?.lable}
                 </h4>
-                <IoIosArrowForward size={18} color="#fff" />
+                <IoIosArrowForward size={18} color="#505050" />
               </div>
             </Link>
           );
