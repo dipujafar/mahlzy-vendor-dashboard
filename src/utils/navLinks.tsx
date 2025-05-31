@@ -4,7 +4,14 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { RiLogoutCircleLine } from "react-icons/ri";
 import Link from "next/link";
 import { PiListPlusFill } from "react-icons/pi";
-import { BadgePlus, Menu, SquareMenu } from "lucide-react";
+import {
+  BadgePlus,
+  BriefcaseBusiness,
+  Clock2,
+  Menu,
+  MessagesSquare,
+  SquareMenu,
+} from "lucide-react";
 import { AddItemIcon, MenuIcon, MenuListIcon } from "@/icons";
 
 export const navLinks = [
@@ -32,7 +39,7 @@ export const navLinks = [
   },
   {
     key: "customer",
-    icon: <MenuIcon />,
+    icon: <GoPeople size={22} />,
     label: "Customer",
     children: [
       {
@@ -42,8 +49,25 @@ export const navLinks = [
       },
       {
         key: "customer_review",
-        icon: <AddItemIcon />,
-        label: <Link href="/customer_review">Customer Review</Link>,
+        icon: <MessagesSquare size={22} />,
+        label: <Link href="/customer-review">Customer Review</Link>,
+      },
+    ],
+  },
+  {
+    key: "restaurant",
+    icon: <GoPeople size={22} />,
+    label: "Restaurant",
+    children: [
+      {
+        key: "time_manage",
+        icon: <Clock2 size={22} />,
+        label: <Link href={"/time-manage"}>Time Manage</Link>,
+      },
+      {
+        key: "business_details",
+        icon: <BriefcaseBusiness size={22} />,
+        label: <Link href="/business-details">Business Details</Link>,
       },
     ],
   },
@@ -58,11 +82,11 @@ export const navLinks = [
   //     label: <Link href={"/user"}>Team Member</Link>,
   //   },
 
-    {
-      key: "settings",
-      icon: <IoSettingsOutline size={18} />,
-      label: <Link href={"/settings"}>Settings</Link>,
-    },
+  {
+    key: "settings",
+    icon: <IoSettingsOutline size={18} />,
+    label: <Link href={"/settings"}>Settings</Link>,
+  },
   // {
   //   key: "logout",
   //   icon: <RiLogoutCircleLine size={18} />,

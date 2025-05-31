@@ -148,7 +148,7 @@ const PersonalInformationContainer = () => {
               {/*  input  name */}
               <Form.Item label="Name" name="name">
                 {edit ? (
-                  <Input size="large" placeholder="Enter full name "  className="!border-[#D3D3D3] !py-3"s></Input>
+                  <Input size="large" placeholder="Enter full name "  className="!border-[#D3D3D3] !py-3"></Input>
                 ) : (
                   <Input
                     size="large"

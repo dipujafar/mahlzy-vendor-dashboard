@@ -37,7 +37,7 @@ const SidebarContainer = ({ collapsed }: { collapsed: boolean }) => {
 
   return (
     <Sider
-      width={240}
+      width={250}
       theme="light"
       collapsible
       collapsed={collapsed}
@@ -80,7 +80,7 @@ const SidebarContainer = ({ collapsed }: { collapsed: boolean }) => {
       />
       <div className="absolute  w-[90%]  bottom-5 flex justify-center items-center px-2">
         {!collapsed ? (
-          <Link href={"/login"} className="w-full">
+          <Link href={"#"} className="w-full">
             <Button
               icon={<IoLogInOutline size={22} />}
               className=" w-full !bg-white !text-black !border-main-color flex items-center justify-center font-600 text-18  border border-white hover:!bg-gray-100 !duration-500 !py-5"
@@ -89,7 +89,7 @@ const SidebarContainer = ({ collapsed }: { collapsed: boolean }) => {
             </Button>
           </Link>
         ) : (
-          <Link href={"/login"}>
+          <Link href={"#"}>
             <div className=" px-3 py-2 bg-main-color rounded">
               <IoLogInOutline color="#fff" size={24} />
             </div>
