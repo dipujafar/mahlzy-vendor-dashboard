@@ -1,18 +1,9 @@
 import { RiDashboardHorizontalFill } from "react-icons/ri";
 import { GoPeople } from "react-icons/go";
 import { IoSettingsOutline } from "react-icons/io5";
-import { RiLogoutCircleLine } from "react-icons/ri";
 import Link from "next/link";
-import { PiListPlusFill } from "react-icons/pi";
-import {
-  BadgePlus,
-  BriefcaseBusiness,
-  Clock2,
-  Menu,
-  MessagesSquare,
-  SquareMenu,
-} from "lucide-react";
-import { AddItemIcon, MenuIcon, MenuListIcon } from "@/icons";
+import { BriefcaseBusiness, Clock2, MessagesSquare } from "lucide-react";
+import { AddItemIcon, MenuIcon, MenuListIcon, RestaurantIcon } from "@/icons";
 
 export const navLinks = [
   {
@@ -56,7 +47,7 @@ export const navLinks = [
   },
   {
     key: "restaurant",
-    icon: <GoPeople size={22} />,
+    icon: <RestaurantIcon />,
     label: "Restaurant",
     children: [
       {
