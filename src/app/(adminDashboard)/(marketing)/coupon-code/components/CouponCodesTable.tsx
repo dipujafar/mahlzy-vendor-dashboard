@@ -8,6 +8,7 @@ import { useState } from "react";
 import DataTable from "@/utils/DataTable";
 import { CgUnblock } from "react-icons/cg";
 import { ArrowDownWideNarrowIcon, Eye, Info, Plus, Search } from "lucide-react";
+import Link from "next/link";
 
 type TDataType = {
   key?: number;
@@ -74,7 +75,7 @@ export default function CouponCodesTable() {
     <div className="space-y-5">
       <div className="flex justify-between   items-center">
         <h1 className="text-xl font-bold text-[#505050]">Coupon Codes</h1>
-        <Button><Plus size={20}/>Create a New Coupon Code</Button>
+       <Link href={"/add-coupon"}> <Button><Plus size={20}/>Create a New Coupon Code</Button> </Link>
       </div>
       <DataTable columns={columns} data={data} pageSize={11}></DataTable>
     </div>
