@@ -2,7 +2,6 @@
 import { Avatar, Flex } from "antd";
 import { FaBars } from "react-icons/fa6";
 import avatarImg from "@/assets/image/profile.png";
-
 import Link from "next/link";
 import { X } from "lucide-react";
 

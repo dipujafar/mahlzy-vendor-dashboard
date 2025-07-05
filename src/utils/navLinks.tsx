@@ -3,7 +3,7 @@ import { GoPeople } from "react-icons/go";
 import { IoSettingsOutline } from "react-icons/io5";
 import Link from "next/link";
 import { BriefcaseBusiness, Clock2, MessagesSquare } from "lucide-react";
-import { AddItemIcon, MenuIcon, MenuListIcon, RestaurantIcon } from "@/icons";
+import { AddItemIcon, CouponCodeIcon, MarketingIcon, MenuIcon, MenuListIcon, RestaurantIcon, SponsoredIcon } from "@/icons";
 
 export const navLinks = [
   {
@@ -29,6 +29,23 @@ export const navLinks = [
     ],
   },
   {
+    key: "marketing",
+    icon: <MarketingIcon />,
+    label: "Marketing",
+    children: [
+      {
+        key: "coupon_code",
+        icon: <CouponCodeIcon className="nav-icon" />,
+        label: <Link href="/coupon-code">Coupon Code</Link>,
+      },
+      {
+        key: "sponsored",
+        icon: <SponsoredIcon />,
+        label: <Link href="/sponsored">Sponsored</Link>,
+      },
+    ],
+  },
+  {
     key: "customer",
     icon: <GoPeople size={22} />,
     label: "Customer",
@@ -39,9 +56,9 @@ export const navLinks = [
         label: <Link href={"/customers"}>Customers List</Link>,
       },
       {
-        key: "customer_review",
+        key: "customer_reviews",
         icon: <MessagesSquare size={22} />,
-        label: <Link href="/customer-review">Customer Review</Link>,
+        label: <Link href="/customer-reviews">Customer Reviews</Link>,
       },
     ],
   },
